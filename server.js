@@ -278,7 +278,7 @@ const accessLogStream = require('file-stream-rotator').getStream({
   filename: './logs/access.log',
   frequency: 'daily',
   verbose: false,
-  max_logs: '2d'
+  // max_logs: '2d'
 })
 app.use(morgan('combined', { stream: accessLogStream }))
 
